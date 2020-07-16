@@ -9,13 +9,14 @@ userAnswer = prompt("Сколько дроидов Вы хотите купит�
 if (userAnswer === null) {
   message = "Отменено пользователем!";
   alert(message);
-}
+}else {
 totalPrice = userAnswer * pricePerDroid;
-if (totalPrice > credits) {
+ if (totalPrice > credits) {
   message = "Недостаточно средств на счету!";
   alert(message);
 } else {
   credits = credits - totalPrice;
   message = `Вы купили ${userAnswer} дроидов, на счету осталось ${credits} кредоитов`;
   alert(message);
+}
 }

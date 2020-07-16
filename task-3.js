@@ -7,7 +7,7 @@ if (userPassword === null) {
   message = "Отменено пользователем!";
   alert(message);
 }
-if (userPassword === ADMIN_PASSWORD) {
+ else if (userPassword === ADMIN_PASSWORD) {
   message = "Добро пожаловать!";
   alert(message);
 } else {

@@ -3,12 +3,11 @@ let message;
 let cost;
 let userCountry;
 userCountry = prompt("В какую страну сделать доставку?");
-let answer = userCountry.toLocaleLowerCase();
 if (userCountry === null) {
   message = "Отменено пользователем!";
   alert(message);
-}
-
+} else { 
+let answer = userCountry.toLocaleLowerCase();
 switch (answer) {
   case "китай":
     cost = 100;
@@ -43,4 +42,5 @@ switch (answer) {
   default:
     message = "В вашей стране доставка не доступна";
     alert(message);
+}
 }
