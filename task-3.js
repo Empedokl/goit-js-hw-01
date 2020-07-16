@@ -6,11 +6,15 @@ userPassword = prompt("Enter your password");
 if (userPassword === null) {
   message = "Отменено пользователем!";
   alert(message);
-}
- else if (userPassword === ADMIN_PASSWORD) {
+} else if (userPassword === ADMIN_PASSWORD) {
   message = "Добро пожаловать!";
   alert(message);
 } else {
   message = "Доступ запрещен, неверный пароль!";
   alert(message);
 }
+
+
+
+
+

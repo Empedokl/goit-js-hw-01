@@ -3,7 +3,7 @@ let input;
 let total = 0;
 while (true) {
   input = prompt("Введите число");
-  if (input === null){
+  if (input === null) {
     break;
   }
   input = Number(input);
@@ -13,5 +13,5 @@ while (true) {
   } else {
     total = Number(total) + Number(input);
   }
-}  
+}
 alert(`Общая сумма чисел равна ${total}`);
