@@ -11,7 +11,7 @@ while (true) {
   if (checkNumber) {
     alert("Было введено не число, попробуйте еще раз");
   } else {
-    total = Number(total) + Number(input);
+    total = total + input;
   }
 }
 alert(`Общая сумма чисел равна ${total}`);
